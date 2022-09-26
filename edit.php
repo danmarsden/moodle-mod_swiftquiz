@@ -37,7 +37,7 @@ require_login();
     global $PAGE, $COURSE;
     $action = optional_param('action', 'listquestions', PARAM_ALPHA);
    
-    $id = optional_param('id', false, PARAM_INT);
+    $id = optional_param('cmid', false, PARAM_INT);
     // Inconsistency in question_edit_setup.
     // if (isset($_GET['id'])) {
     //     $_GET['cmid'] = $_GET['id'];
